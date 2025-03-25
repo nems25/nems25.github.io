@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEMS 2025 – New England Manipulation Symposium</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+    .banner-container {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+    .bg-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+
+  <div class="banner-container">
+    <img src="images/stata.png" alt="MIT Stata Center" class="bg-img" />
+    <canvas id="bannerCanvas" width="1280" height="300"></canvas>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('bannerCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.shadowColor = 'black';
+    ctx.shadowBlur = 6;
+    ctx.shadowOffsetX = 2;
+    ctx.shadowOffsetY = 2;
+
+    ctx.font = 'bold 36px sans-serif';
+    ctx.fillStyle = '#fbbf24';
+    ctx.fillText('New England Manipulation Symposium', 40, 60);
+
+    ctx.font = 'bold 28px sans-serif';
+    ctx.fillStyle = '#fcd34d';
+    ctx.fillText('June 6, 2025', 40, 100);
+
+    ctx.font = 'bold 64px sans-serif';
+    ctx.fillStyle = '#d97706';
+    ctx.fillText('NEMS 2025', 40, 180);
+
+    ctx.font = '28px sans-serif';
+    ctx.fillStyle = '#e2e8f0';
+    ctx.fillText('MIT Stata Center, Cambridge, MA', 40, 230);
+  </script>
+
+  <nav class="bg-gray-200 py-3 text-center">
+    <ul class="flex justify-center space-x-6">
+      <li><a href="#about" class="hover:underline">About</a></li>
+      <li><a href="#call-for-papers" class="hover:underline">Call for Papers</a></li>
+      <li><a href="#registration" class="hover:underline">Registration</a></li>
+      <li><a href="#location" class="hover:underline">Location</a></li>
+      <li><a href="#sponsors" class="hover:underline">Sponsors</a></li>
+      <li><a href="#contact" class="hover:underline">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="max-w-4xl mx-auto px-6 py-10 space-y-16">
+    <section id="about">
+      <h3 class="text-3xl font-semibold mb-4">What is NEMS?</h3>
+      <p>
+        NEMS is an annual research symposium in the Northeast focused on robotic manipulation research of all kinds, including mechanics, mechanisms, control, learning, perception, and planning. NEMS has two main goals. First, to provide an opportunity for members of the Northeast robotic manipulation research community to meet and talk in person, share ideas, and become familiar with each other’s work. Second, to provide students and early-career researchers a platform from which to present their latest work.
+      </p>
+    </section>
+
+    <section id="call-for-papers">
+      <h3 class="text-3xl font-semibold mb-4">Call for Papers</h3>
+      <p>
+        The New England Manipulation Symposium (NEMS) invites submissions of abstracts for poster and oral presentations at our 2025 symposium, to be held on Friday, June 6, 2025, at the MIT Stata Center. This non-archival symposium welcomes submissions of both published and unpublished work. We are particularly interested in research related to robotic manipulation, including mechanisms, control, learning, perception, and planning.
+      </p>
+      <p>
+        Submissions will be reviewed for relevance and quality, and we aim to accept all valid submissions for poster presentation. A subset of submissions will be selected for short oral presentations. All attendees are encouraged to register in advance so we can plan accordingly.
+      </p>
+      <p>
+        Each presentation will be allotted a 15-minute time slot (12 minutes plus 3 for questions). You will use your own laptop, and you should arrive 15 minutes before your session starts to ensure that it works properly.
+      </p>
+      <p>
+        For posters, you will have a 4'x4' area to use. Posters will be put on magnetic markerboards (magnets will be provided to hang them). We also have room for about half of the posters to instead be presented on large screen TVs (~50") in the poster room.
+      </p>
+      <p>
+        Please submit your abstract<a href="https://docs.google.com/forms/d/1V9x2KvBjcd122c5sRpO7582K_Zcdu5AUDB1aR2WOvNQ/edit" class="text-blue-600 underline ml-1">here</a>
+      </p>
+    </section>
+
+    <section id="registration">
+      <h3 class="text-3xl font-semibold mb-4">Registration</h3>
+      <p>
+        Attendance at NEMS 2025 is free and open to the research community. Please register in advance<a href="https://docs.google.com/forms/d/e/1FAIpQLSciXFtNcCmceRGDNpEWBLrdJwRRjVCMpB04JQn2sLU_RxiXJQ/viewform?usp=header" class="text-blue-600 underline ml-1">here</a>
+      </p>
+    </section>
+
+    <section id="location">
+      <h3 class="text-3xl font-semibold mb-4">Location</h3>
+      <p>
+        NEMS 2025 will take place at the MIT Stata Center, located at 32 Vassar St, Cambridge, MA 02139.
+      </p>
+      <div class="my-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.3791797839646!2d-71.09211048454108!3d42.36160997918642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370aafcb863e3%3A0xf792d6c151f1e85c!2sRay%20and%20Maria%20Stata%20Center!5e0!3m2!1sen!2sus!4v1711290504321!5m2!1sen!2sus"
+          width="100%"
+          height="300"
+          style="border:0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <h3 class="text-3xl font-semibold mb-4">Sponsors</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
+        <a href="https://rai-inst.com/" target="_blank" class="flex flex-col items-center space-y-2">
+          <img src="images/rai.svg" alt="RAI Institute Logo" class="h-20 object-contain" />
+        </a>
+        <!-- To add more sponsors:
+             Copy the <a> block above and replace the href, img src, alt text, and sponsor name.
+             Example:
+             <a href="https://example.com" target="_blank" class="flex flex-col items-center space-y-2">
+               <img src="images/example_logo.png" alt="Example Sponsor Logo" class="h-20 object-contain" />
+               <span class="text-blue-600 text-center">Example Sponsor</span>
+             </a>
+        -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3 class="text-3xl font-semibold mb-4">Contact</h3>
+      <p>For more information, please contact the NEMS 2025 organizers:</p>
+      <ul class="list-disc pl-6">
+        <li>Lael Odhner: <a href="mailto:lael@rai-inst.com" class="text-blue-600">lael@rai-inst.com</a></li>
+        <li>David Watkins: <a href="mailto:dwatkins@rai-inst.com" class="text-blue-600">dwatkins@rai-inst.com</a></li>
+        <li>Kaitlyn Becker: <a href="mailto:kait@mit.edu" class="text-blue-600">kait@mit.edu</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-gray-100 text-center py-6 text-sm text-gray-600">
+    &copy; 2025 New England Manipulation Symposium. All rights reserved.
+  </footer>
+</body>
+</html>
