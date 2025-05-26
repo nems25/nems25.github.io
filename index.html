@@ -23,6 +23,26 @@
       height: 300px;
       object-fit: cover;
     }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #003366;
+    }
+    .session {
+      margin-bottom: 2em;
+    }
+    .talk {
+      margin-bottom: 0.8em;
+    }
+    .time {
+      font-weight: bold;
+    }
+    .speaker {
+      font-style: italic;
+    }
   </style>
 </head>
 <body class="font-sans text-gray-800">
@@ -89,17 +109,412 @@
         Each presentation will be allotted a 15-minute time slot (12 minutes plus 3 for questions). You will use your own laptop, and you should arrive 15 minutes before your session starts to ensure that it works properly.
       </p>
       <p>
-        For posters, you will have a 4'x4' area to use. Posters will be put on magnetic markerboards (magnets will be provided to hang them).
-      </p>
-      <p>
-        Please submit your abstract<a href="https://docs.google.com/forms/d/1V9x2KvBjcd122c5sRpO7582K_Zcdu5AUDB1aR2WOvNQ/edit" class="text-blue-600 underline ml-1">here</a>
+        For posters, we recommend you print a hard-backed 36"x24" poster. If needed, we will provide poster board and clips. We will provide easels for all accepted posters.
       </p>
     </section>
+
+    <section id="schedule">
+  <h3 class="text-3xl font-semibold mb-6">Schedule</h3>
+
+  <!-- Morning Session I -->
+  <h4 id="morning1" class="text-xl font-bold text-gray-900 border-b-2 border-gray-300 mt-10 mb-4 pb-1">
+    Morning Session I
+  </h4>
+
+  <div class="space-y-2">
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-l-4 border-gray-400 bg-gray-50">
+      <div class="sm:col-span-2 font-bold text-sm">8:55 – 9:10</div>
+      <div class="sm:col-span-6 font-medium">Welcome & Introduction</div>
+      <div class="sm:col-span-4 italic text-gray-600">David Watkins (RAI), Lael Odhner (RAI), Kait Becker (MIT)</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-l-4 border-blue-400 bg-blue-50">
+      <div class="sm:col-span-2 font-bold text-sm">9:10 – 9:55</div>
+      <div class="sm:col-span-6 font-medium">Keynote: Foundation Models for Robotic Manipulation: Opportunities and Challenges</div>
+      <div class="sm:col-span-4 italic text-gray-600">Yunzhu Li – Columbia University</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">9:55 – 10:10</div>
+      <div class="sm:col-span-6">V-HOP: Visuo-Haptic 6D Object Pose Tracking</div>
+      <div class="sm:col-span-4 italic text-gray-600">Hongyu Li – Brown University</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">10:10 – 10:25</div>
+      <div class="sm:col-span-6">Scalable Real2Sim: Physics-Aware Asset Generation via Robotic Pick-and-Place Setups</div>
+      <div class="sm:col-span-4 italic text-gray-600">Nicholas Pfaff – MIT</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">10:25 – 10:40</div>
+      <div class="sm:col-span-6">Safe Autonomous Environmental Contact for Soft Robots using Control Barrier Functions</div>
+      <div class="sm:col-span-4 italic text-gray-600">Akua K Dickson – Boston University</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-l-4 border-yellow-400 bg-yellow-50">
+      <div class="sm:col-span-2 font-bold text-sm">10:40 – 10:50</div>
+      <div class="sm:col-span-6">Sponsored Talk: RAI Institute</div>
+      <div class="sm:col-span-4 italic text-gray-600">Title TBD</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 bg-gray-100">
+      <div class="sm:col-span-2 font-bold text-sm">10:50 – 11:20</div>
+      <div class="sm:col-span-10">Coffee Break + Poster/Demo Session</div>
+    </div>
+  </div>
+
+  <!-- Morning Session II -->
+  <h4 id="morning2" class="text-xl font-bold text-gray-900 border-b-2 border-gray-300 mt-10 mb-4 pb-1">
+    Morning Session II
+  </h4>
+
+  <div class="space-y-2">
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">11:20 – 11:35</div>
+      <div class="sm:col-span-6">DEXOS: Hand Exoskeleton System for Teaching Robot Dexterous Manipulation In-The-Wild</div>
+      <div class="sm:col-span-4 italic text-gray-600">Haoshu Fang – MIT</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">11:35 – 11:50</div>
+      <div class="sm:col-span-6">Physics-Driven Data Generation for Contact-Rich Manipulation via Trajectory Optimization</div>
+      <div class="sm:col-span-4 italic text-gray-600">Lujie Yang – MIT</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">11:50 – 12:05</div>
+      <div class="sm:col-span-6">Streaming Flow Policy</div>
+      <div class="sm:col-span-4 italic text-gray-600">Sunshine Jiang – MIT</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">12:05 – 12:20</div>
+      <div class="sm:col-span-6">Viscous Thread Printing for Custom Soft Robotic Manipulators</div>
+      <div class="sm:col-span-4 italic text-gray-600">Jacob Miske – Northeastern</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">12:20 – 12:35</div>
+      <div class="sm:col-span-6">ManiFeel: Benchmarking Visuotactile Manipulation Policy Learning</div>
+      <div class="sm:col-span-4 italic text-gray-600">Zhengtong Xu – Purdue</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-l-4 border-yellow-400 bg-yellow-50">
+      <div class="sm:col-span-2 font-bold text-sm">12:35 – 12:45</div>
+      <div class="sm:col-span-6">Sponsored Talk: TBD</div>
+      <div class="sm:col-span-4 italic text-gray-600">TBD</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 bg-gray-100">
+      <div class="sm:col-span-2 font-bold text-sm">12:45 – 1:15</div>
+      <div class="sm:col-span-10">Lunch + Poster/Demo Session</div>
+    </div>
+  </div>
+
+  <!-- Afternoon Session I -->
+  <h4 id="afternoon1" class="text-xl font-bold text-gray-900 border-b-2 border-gray-300 mt-10 mb-4 pb-1">
+    Afternoon Session I
+  </h4>
+
+  <div class="space-y-2">
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-l-4 border-blue-400 bg-blue-50">
+      <div class="sm:col-span-2 font-bold text-sm">1:15 – 2:00</div>
+      <div class="sm:col-span-6">Keynote: TBD</div>
+      <div class="sm:col-span-4 italic text-gray-600">Pulkit Agrawal – MIT</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">2:00 – 2:15</div>
+      <div class="sm:col-span-6">AnySkin: Plug-and-play Skin Sensing for Robotic Touch</div>
+      <div class="sm:col-span-4 italic text-gray-600">Raunaq Bhirangi – NYU</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">2:15 – 2:30</div>
+      <div class="sm:col-span-6">eFlesh: Highly customizable Magnetic Touch Sensing using Cut-Cell Microstructures</div>
+      <div class="sm:col-span-4 italic text-gray-600">Venkatesh Pattabiraman – NYU</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">2:30 – 2:45</div>
+      <div class="sm:col-span-6">One-Shot Real-to-Sim via End-to-End Differentiable Simulation</div>
+      <div class="sm:col-span-4 italic text-gray-600">Yifan Zhu – Yale</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">2:45 – 3:00</div>
+      <div class="sm:col-span-6">Re-envisioning Force-Torque Sensing with Fiducial Markers</div>
+      <div class="sm:col-span-4 italic text-gray-600">Vatsal V. Patel – Yale</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">3:00 – 3:15</div>
+      <div class="sm:col-span-6">ActivePusher: Active Learning with Residual Physics</div>
+      <div class="sm:col-span-4 italic text-gray-600">Seyedali Golestaneh – WPI</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 bg-gray-100">
+      <div class="sm:col-span-2 font-bold text-sm">3:15 – 3:45</div>
+      <div class="sm:col-span-10">Coffee Break + Poster/Demo Session</div>
+    </div>
+  </div>
+
+  <!-- Afternoon Session II -->
+  <h4 id="afternoon2" class="text-xl font-bold text-gray-900 border-b-2 border-gray-300 mt-10 mb-4 pb-1">
+    Afternoon Session II
+  </h4>
+
+  <div class="space-y-2">
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">3:45 – 4:00</div>
+      <div class="sm:col-span-6">Vibration-induced Friction Modulation</div>
+      <div class="sm:col-span-4 italic text-gray-600">Shambhuraj Mane – WPI</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">4:00 – 4:15</div>
+      <div class="sm:col-span-6">Tetherless Soft Robotic Wearable Haptic HMI</div>
+      <div class="sm:col-span-4 italic text-gray-600">Shilpa Thakur – WPI</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">4:15 – 4:30</div>
+      <div class="sm:col-span-6">Compact Stiffness Modulation Using Counter-Rotating Springs</div>
+      <div class="sm:col-span-4 italic text-gray-600">Marc Bäckert – Harvard</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">4:30 – 4:45</div>
+      <div class="sm:col-span-6">ROAMHand3: A Multi-Finger Robotic Hand</div>
+      <div class="sm:col-span-4 italic text-gray-600">Zhanpeng He – Columbia</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-b border-gray-200">
+      <div class="sm:col-span-2 font-bold text-sm">4:45 – 5:00</div>
+      <div class="sm:col-span-6">Towards Improving Open-Source and Benchmarking</div>
+      <div class="sm:col-span-4 italic text-gray-600">Adam Norton – UMass Lowell</div>
+    </div>
+
+    <div class="flex flex-col sm:grid sm:grid-cols-12 sm:gap-4 py-2 border-l-4 border-gray-400 bg-gray-50">
+      <div class="sm:col-span-2 font-bold text-sm">5:00 – 5:10</div>
+      <div class="sm:col-span-6">Closing Remarks</div>
+      <div class="sm:col-span-4 italic text-gray-600">David Watkins (RAI), Lael Odhner (RAI), Kait Becker (MIT)</div>
+    </div>
+  </div>
+</section>
+
+<section id="posters" class="max-w-4xl mx-auto px-6 py-10">
+  <h2 class="text-3xl font-semibold mb-6">Accepted Posters</h2>
+  <p class="mb-8">
+    The New England Manipulation Symposium 2025 features 47 accepted poster. To improve accessibility and engagement, poster presenters are split across two interactive sessions: one in the morning and one in the afternoon. Below is a list of the accepted posters along with their assigned session.
+  </p>
+
+  <h3 class="text-2xl font-semibold mt-10 mb-4 border-b pb-1">Morning Session</h3>
+  <ul class="space-y-6">
+    <li>
+      <strong>Curating Non-Expert Demonstrations for Safer Imitation Learning</strong><br />
+      <em>Noushad Sojib (UNH, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>ROAMHand3: a multi-finger robotic hand for contact-rich dexterous manipulation tasks</strong><br />
+      <em>Zhanpeng He (Columbia), et al.</em>
+    </li>
+    <li>
+      <strong>Occlusion-Robust Keypoint Detection via Inpainting for Vision-Based Control of Robotic Manipulators</strong><br />
+      <em>Sreejani Chatterjee (WPI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Consensus-Driven Uncertainty for Robotic Grasping based on RGB Perception</strong><br />
+      <em>Eric C Joyce (Stevens IT, presenter), Qianwen Zhao, Nathaniel Brugdorfer, Long Wang, Philippos Mordohai</em>
+    </li>
+    <li>
+      <strong>Safe Autonomous Environmental Contact for Soft Robots using Control Barrier Functions</strong><br />
+      <em>Akua K Dickson (Boston Univ, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Touch begins where vision ends: Generalizable Policies for Contact-Rich Manipulation</strong><br />
+      <em>Zifan Zhao (NYU, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Miniature Bi-Manual End-effector</strong><br />
+      <em>Zewen Chen (Columbia, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Streaming Flow Policy</strong><br />
+      <em>Sunshine Jiang (MIT, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Dexterous Grasping with Auxetics</strong><br />
+      <em>Frances McBride (McGill, presenter), Audrey Sedal</em>
+    </li>
+    <li>
+      <strong>Feedforward Motor Control</strong><br />
+      <em>Rakshith Lokesh (Northeastern, presenter), Dagmar Sternad</em>
+    </li>
+    <li>
+      <strong>Scalable Real2Sim</strong><br />
+      <em>Nicholas Pfaff (MIT, presenter), Evelyn Fu, Jeremy Binagia, Phillip Isola, Russ Tedrake</em>
+    </li>
+    <li>
+      <strong>Embodiment and control of a complex object: hitting a target with a whip</strong><br />
+      <em>Aleksei Krotov (Northeastern, presenter), Dagmar Sternad</em>
+    </li>
+    <li>
+      <strong>Acoustic Tactile Sensing</strong><br />
+      <em>Wilfred Mason (McGill, presenter), Audrey Sedal</em>
+    </li>
+    <li>
+      <strong>Experimental Platform for Soft Robot Limbs</strong><br />
+      <em>Juan C. Pacheco Garcia (Boston Univ, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>ActivePusher</strong><br />
+      <em>Seyedali Golestaneh (WPI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Self-Sensing in Soft Robots</strong><br />
+      <em>Ran Jing (Boston Univ, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Optimizing ConvNets with Gabor Filters</strong><br />
+      <em>Syed Azhar Hussain Quadri (NEU, presenter)</em>
+    </li>
+    <li>
+      <strong>Viscous Thread Printing (VTP)</strong><br />
+      <em>Jacob Miske (Northeastern, presenter), Brett Emery, Jeffrey Lipton</em>
+    </li>
+    <li>
+      <strong>Expansion-GRR</strong><br />
+      <em>Zhuoyun Zhong (WPI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Learning based Collaborative Control for Multiagent Tactile-Reactive Grasping </strong><br />
+      <em>Chuangchuang Sun (Mississippi State, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>PopcornFT Sensors</strong><br />
+      <em>Kai Jiang (Columbia, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>ManiFeel: Visuotactile Manipulation</strong><br />
+      <em>Zhengtong Xu (Purdue, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>DEXOS: Hand Exoskeleton System for Teaching Robot Dexterous Manipulation In-The-Wild</strong><br />
+      <em>Haoshu Fang (MIT, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Bend, Flex, and Scrub: Using a Soft Robot for Safe, High-Contact Surface Cleaning</strong><br />
+      <em>Jakub Kowalewski (Northeastern, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Onboard Sensing and Pushing of Unknown Payload for CoM Estimation with a Holonomic Mobile Robot</strong><br />
+      <em>Steven Hyland (WPI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Learning based Collaborative Control for Multiagent Tactile-Reactive Grasping</strong><br />
+      <em>Leonel Giacobbe (Mississippi State University, presenter), et al.</em>
+    </li>
+  </ul>
+
+  <h3 class="text-2xl font-semibold mt-12 mb-4 border-b pb-1">Afternoon Session</h3>
+  <ul class="space-y-6">
+    <li>
+      <strong>V-HOP: Visuo-Haptic 6D Object Pose Tracking</strong><br />
+      <em>Hongyu Li (Brown, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Mass-Adaptive Admittance Control</strong><br />
+      <em>Hossein Gholampour (ODU, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Can Rigid Gripper Policies Transfer?</strong><br />
+      <em>Shiyao Ni (McGill/Mila, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Modular Soft Magnetic Sensor</strong><br />
+      <em>Neehal Sharrma (WPI, presenter), Cagdas Onal</em>
+    </li>
+    <li>
+      <strong>Striking a Target with a Whip</strong><br />
+      <em>Mahdiar Edraki (Northeastern, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>A Tetherless Soft Robotic Wearable Haptic Human Machine Interface for Robot Teleoperation</strong><br />
+      <em>Shilpa Thakur (WPI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>One-Shot Real-to-Sim</strong><br />
+      <em>Yifan Zhu (Yale, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Equivariant Manipulation with RGB</strong><br />
+      <em>David Klee (NEU, presenter), Robin Walters</em>
+    </li>
+    <li>
+      <strong>Picking with Soft Continuum Robot</strong><br />
+      <em>Abhinav Gandhi (WPI, presenter), Berk Calli</em>
+    </li>
+    <li>
+      <strong>AnySkin</strong><br />
+      <em>Raunaq Bhirangi (NYU, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Re-envisioning Force-Torque Sensing</strong><br />
+      <em>Vatsal V. Patel (Yale, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>eFlesh: Highly customizable Magnetic Touch Sensing using Cut-Cell Microstructures</strong><br />
+      <em>Venkatesh Pattabiraman (NYU, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Developing Datasets to Support Robotics for Manufacturing Research: The NIST Manufacturing Objects and Assemblies Dataset (MOAD)</strong><br />
+      <em>Peter Gavriel, Kenneth Kimble, Adam Norton, Megan Zimmerman</em>
+    </li>
+    <li>
+      <strong>Parameter-Free Segmentation of Robot Movements with Cross-Correlation Using Different Similarity Metrics</strong><br />
+      <em>Brendan Hertel (UMass Lowell, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Composite Distributed Learning</strong><br />
+      <em>Emadodin Jandaghi (URI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Compact Stiffness Modulation</strong><br />
+      <em>Marc Bäckert (Harvard/ETH, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>The Role of Singularities</strong><br />
+      <em>Carlos Lück (USM, presenter)</em>
+    </li>
+    <li>
+      <strong>Physics-Driven Data Generation</strong><br />
+      <em>Lujie Yang (MIT/RAI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Modular Tool for Non-Prehensile Interactions</strong><br />
+      <em>Cedric-Pascal Sommer (Harvard, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Towards Improving Open-Source Benchmarking</strong><br />
+      <em>Adam Norton (UMass Lowell, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Vibration-induced Friction Modulation to Enable Controlled Sliding for In-hand Manipulation</strong><br />
+      <em>Shambhuraj Mane (WPI, presenter), et al.</em>
+    </li>
+    <li>
+      <strong>Evaluation of Movement Primitive Methods for Constrained Motion Generation and Composition</strong><br />
+      <em>Andrea Pierré (UMass Lowell, presenter), et al.</em>
+    </li>
+  </ul>
+</section>
 
     <section id="registration">
       <h3 class="text-3xl font-semibold mb-4">Registration</h3>
       <p>
-        Attendance at NEMS 2025 is free and open to the research community. Please register in advance<a href="https://docs.google.com/forms/d/e/1FAIpQLSciXFtNcCmceRGDNpEWBLrdJwRRjVCMpB04JQn2sLU_RxiXJQ/viewform?usp=header" class="text-blue-600 underline ml-1">here</a>
+        Registration for NEMS 2025 is now closed. Please contact the organizers if you have any questions. 
       </p>
     </section>
 
@@ -143,7 +558,7 @@
       <p>For more information, please contact the NEMS 2025 organizers:</p>
       <ul class="list-disc pl-6">
         <li>Lael Odhner: <a href="mailto:lael@rai-inst.com" class="text-blue-600">lael@rai-inst.com</a></li>
-        <li>David Watkins: <a href="mailto:dwatkins@rai-inst.com" class="text-blue-600">dwatkins@rai-inst.com</a></li>
+        <li>David Watkins: <a href="mailto:davidwatkins@cs.columbia.edu" class="text-blue-600">davidwatkins@cs.columbia.edu</a></li>
         <li>Kaitlyn Becker: <a href="mailto:kait@mit.edu" class="text-blue-600">kait@mit.edu</a></li>
       </ul>
     </section>
