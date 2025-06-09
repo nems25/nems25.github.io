@@ -88,6 +88,36 @@
     ctx.font = '28px sans-serif';
     ctx.fillStyle = '#e2e8f0';
     ctx.fillText('MIT Stata Center, Cambridge, MA', 40, 230);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let index = 0;
+
+      const carousel = document.getElementById('carousel-images');
+      const totalSlides = carousel.children.length;
+
+      function updateCarousel() {
+        const offset = index * carousel.clientWidth;
+        carousel.style.transform = `translateX(-${offset}px)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateCarousel();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+      }
+
+      window.addEventListener('resize', updateCarousel);
+
+      // Optional: auto-advance
+      setInterval(nextSlide, 5000);
+
+      document.querySelector('.prev-button').addEventListener('click', prevSlide);
+      document.querySelector('.next-button').addEventListener('click', nextSlide);  
+    });
   </script>
 
   <script type="application/ld+json">
@@ -135,6 +165,29 @@
       <p>
         NEMS is an annual research symposium in the Northeast focused on robotic manipulation research of all kinds, including mechanics, mechanisms, control, learning, perception, and planning. NEMS has two main goals. First, to provide an opportunity for members of the Northeast robotic manipulation research community to meet and talk in person, share ideas, and become familiar with each other’s work. Second, to provide students and early-career researchers a platform from which to present their latest work.
       </p>
+    </section>
+
+    <section id="gallery" class="max-w-4xl mx-auto px-6 py-10">
+      <h3 class="text-3xl font-semibold mb-4">NEMS 2025 Photo Gallery</h3>
+      <div class="relative w-full overflow-hidden rounded-2xl shadow-md h-64 sm:h-80">
+       <div id="carousel-images" class="flex transition-transform duration-700 ease-in-out h-full">
+          <img src="images/event/image1.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 1" />
+          <img src="images/event/image2.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 2" />
+          <img src="images/event/image3.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 3" />
+          <img src="images/event/image4.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 4" />
+          <img src="images/event/image5.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 5" />
+          <img src="images/event/image6.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 6" />
+          <img src="images/event/image7.jpg" class="h-full w-full object-contain flex-shrink-0" alt="NEMS Photo 7" />
+          <!-- Add more images as needed -->
+        </div>
+        <!-- Navigation buttons -->
+        <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 px-3 py-1 rounded-r hover:bg-opacity-100 prev-button">
+          ‹
+        </button>
+        <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-75 px-3 py-1 rounded-l hover:bg-opacity-100 next-button">
+          ›
+        </button>
+      </div>
     </section>
 
     <section id="call-for-papers">
